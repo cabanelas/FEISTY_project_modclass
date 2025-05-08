@@ -190,6 +190,7 @@ paramInit = function(...) {
   param$ix     = list() # Indexes of each fish group
   param$ixFish = list() # Indices to all fish groups
   param$ixR = NA # Indices to all resource groups
+  param$betaDD = 0.05
   
   param$my_palette <- c("smallZoo" = "#DDCC77",
                         "largeZoo" = "#999933",
