@@ -200,7 +200,8 @@ derivativesFEISTYR = function(t,              # current time
   # ----------------------------------------------
   # Total mortality (includes basal and fishing mortality)
   # ----------------------------------------------
-  mort = mortpred + p$mort0 + p$mortF   # /year
+  #mort = mortpred + p$mort0 + p$mortF   # /year
+  mort = mortpred + (p$mort0 + p$betaDD * B) + p$mortF
   
   # ----------------------------------------------
   # Derivative of fish groups
